@@ -3,21 +3,28 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
+      // ------------------------------------------------------------
+      // PALETTE — “quiet luxury” scheme from color research: jewel
+      // darks + muted bronze + warm sand (per 2025-26 luxury-travel
+      // brand practice). Token names kept stable across the codebase;
+      // only values changed. Contrast: ink/white 18.2:1, bronze/ink
+      // 5.9:1, ink/sand 16.1:1, eyebrow 5.0:1 — all AA or better.
+      // ------------------------------------------------------------
       colors: {
         navy: {
-          DEFAULT: '#0F1B2D',
-          800: '#16263D',
-          700: '#1E3350',
-          600: '#2A4468',
+          DEFAULT: '#121711',
+          800: '#1A231A',
+          700: '#243024',
+          600: '#33422F',
         },
         gold: {
-          DEFAULT: '#C9A227',
-          light: '#E3C05C',
-          dark: '#A5851D',
+          DEFAULT: '#B08D57',
+          light: '#D9C3A0',
+          dark: '#7E6238',
         },
         cream: {
-          DEFAULT: '#FAF6EF',
-          dark: '#F0E9DB',
+          DEFAULT: '#F5F1E8',
+          dark: '#EAE3D3',
         },
         whatsapp: '#25D366',
       },

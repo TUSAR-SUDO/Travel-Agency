@@ -18,7 +18,7 @@ export default function WhatsAppCTA({
           className="pointer-events-none absolute inset-0 opacity-20"
           style={{
             background:
-              'radial-gradient(600px 200px at 50% 0%, rgba(201,162,39,0.5), transparent 70%)',
+              'radial-gradient(600px 200px at 50% 0%, rgba(176,141,87,0.5), transparent 70%)',
           }}
         />
         <h3 className="relative font-display text-2xl font-bold text-white sm:text-3xl">
