@@ -1,0 +1,96 @@
+[] 🧭
+[] WEBSITE BLUEPRINT
+[] Travel Agency Website — Frontend Design &amp; Build Plan
+[] Prepared by: Your Name / Your Studio   ·   Date: 21 September 2026
+[] What We&apos;re Building
+[] A fast, beautiful, mobile-first website that works as a 24/7 travel salesperson. Every page is built to earn trust and end in one action: a WhatsApp message or phone call. There&apos;s no payment gateway or booking engine in this version — the goal is enquiries, not checkout. The structure below is inspired by how established travel platforms like Tripeizer and ixigo organise packages and destinations, simplified into a clean, no-login, enquiry-first experience.
+[] 🎯  THIS WEBSITE MUST DO THREE THINGS WELL
+[] ✨
+[] Feel Premium
+[] Cinematic full-screen photography and smooth motion — trust built in the first 5 seconds.
+[] 🧳
+[] Show Trips Clearly
+[] Every package answers &apos;what exactly am I getting&apos; before the visitor has to ask.
+[] 💬
+[] Convert to Enquiry
+[] WhatsApp and Call are always one tap away — that&apos;s the entire funnel.
+[] 01
+[] 🗂️  SITE STRUCTURE — THE PAGES
+[] A lean set of pages that covers everything a traveller needs to decide, without any page that doesn&apos;t earn its place:
+[] 🏠
+[] Home
+[] Cinematic hero, featured packages, trust section, destination explorer, testimonials.
+[] 🗺️
+[] Packages / Destinations
+[] Every trip in one browsable grid — filter by Domestic, International, or trip type.
+[] 📋
+[] Package Detail (dynamic)
+[] One template, reused for every package — e.g. /packages/goa or /packages/kashmir — itinerary, gallery, inclusions, WhatsApp CTA.
+[] 🧑‍🤝‍🧑
+[] About Us
+[] Your story, your team, why travellers should trust your agency over a random search result.
+[] 📞
+[] Contact
+[] Phone, WhatsApp, address, map, and a short enquiry form — no login required.
+[] 02
+[] 🏡  HOMEPAGE EXPERIENCE
+[] The homepage sells the feeling of travel before it sells a single package:
+[] ✓  Full-screen cinematic hero — a striking destination photo or short looping video, minimal bold headline, no clutter
+[] ✓  Featured packages carousel — photo, duration, 2–3 highlights, and a &apos;View Details&apos; card that feels premium, not templated
+[] ✓  A &apos;Why Choose Us&apos; trust strip — Trusted Agency, Best Prices, 24/7 Support, Personalised Planning
+[] ✓  A destination explorer — Goa, Kashmir, Mumbai, Bali, Dubai and more, grouped Domestic vs International like larger travel sites do
+[] ✓  Real traveller testimonials — social proof sells better than any feature list
+[] ⭐ Sticky WhatsApp Button — a permanent WhatsApp icon on every page, always one tap away. This single element is expected to drive the majority of enquiries.
+[] 03
+[] 🧳  PACKAGE DETAIL PAGE — WHERE DECISIONS HAPPEN
+[] Click &apos;Mumbai Trip&apos; and this is what opens — one reusable template that powers every package on the site:
+[] ✓  Hero image or short video for that destination, trip title, duration badge (e.g. 3N/4D)
+[] ✓  Quick-facts bar — starting city, hotel category, meals included, best season
+[] ✓  Trip highlights and a day-by-day itinerary, written in plain, easy language
+[] ✓  A photo gallery of every place visited, each with a one-line description
+[] ✓  Clear inclusions &amp; exclusions, so there are no surprises before they message you
+[] ✓  “Book This Trip on WhatsApp” buttons placed at the top, middle, and bottom of the page
+[] 04
+[] 🎨  DESIGN DIRECTION — MAKING IT FEEL ALIVE
+[] This is what will separate this site from a generic travel template:
+[] ✓  Full-bleed, edge-to-edge photography instead of small boxed images — the destination fills the screen
+[] ✓  Package cards that play a short muted video preview on hover, then settle back to a photo
+[] ✓  Smooth scroll-reveal animations — sections fade and rise into view instead of appearing instantly
+[] ✓  A warm, premium colour palette and confident typography — a bold display headline paired with clean body text
+[] ✓  Every layout designed mobile-first, since most visitors will land here from a shared WhatsApp link on their phone
+[] 05
+[] 🚫  WHAT&apos;S INTENTIONALLY LEFT OUT OF V1
+[] Keeping this version focused means it launches faster and stays simple to use. None of the below are needed to start getting enquiries:
+[] ✗  Online payments / booking checkout
+[] ✗  Customer accounts or logins
+[] ✗  A self-editing admin panel
+[] ✗  Blog or travel guides
+[] ✗  Live chat widget
+[] 06
+[] 📈  WHERE THIS CAN GROW NEXT
+[] The site is built in clean, independent sections from day one, so every phase below is an addition, not a rebuild:
+[] Phase 2
+[] Admin Panel
+[] Edit packages, prices and photos yourself — no need to call a developer for every change.
+[] Phase 3
+[] Blog &amp; SEO Content
+[] Travel guides that bring in free, organic Google traffic over time.
+[] Phase 4
+[] WhatsApp Automation
+[] Instant auto-replies to enquiries — feels professional, responds even after hours.
+[] Phase 5
+[] Reviews Integration
+[] Live Google reviews displayed on-site, building trust automatically.
+[] Phase 6
+[] Payments &amp; Booking
+[] Collect advance deposits online, once you&apos;re ready to sell direct.
+[] 07
+[] 📝  WHAT WE NEED FROM YOU TO START
+[] ✓  Agency name, tagline, and a short “About Us” (3–5 lines)
+[] ✓  Logo file — PNG or SVG preferred
+[] ✓  WhatsApp number, phone number, and email to display
+[] ✓  5 to 8 packages to feature — trip name, duration, places covered, day-wise plan, inclusions &amp; exclusions
+[] ✓  At least 3–5 photos (or short clips) per destination — real photos build far more trust than stock images
+[] Note: Where real photos or videos aren&apos;t available yet, high-quality licensed stock will be used and can be swapped in anytime after launch.
+[] 🧭 Let&apos;s Build Something They&apos;ll Want to Come Back To
+[] A focused, beautiful V1 today — and a clear runway of features to grow into, together, as the business grows.
