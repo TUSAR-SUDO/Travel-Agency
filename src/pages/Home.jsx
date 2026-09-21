@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import SlideshowHero from '../components/SlideshowHero.jsx'
 import TrustStrip from '../components/TrustStrip.jsx'
+import JourneyTimeline from '../components/JourneyTimeline.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
 import Reveal, { staggerParent, staggerChild } from '../components/Reveal.jsx'
 import PackageCard from '../components/PackageCard.jsx'
@@ -43,6 +44,9 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      {/* ---------- Journey timeline ---------- */}
+      <JourneyTimeline />
 
       {/* ---------- Trust strip ---------- */}
       <section className="bg-cream-dark/60 py-20 sm:py-24">
