@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+*.log
+dev.log
+
+# Env files (none exist yet — this protects the future ones)
+.env
+.env.local
+.env.*.local
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+
+# Agent scratch space (drafts, analysis scripts, extracted text)
+.freebuff/
