@@ -58,7 +58,7 @@ export default function Contact() {
           <div className="grid gap-10 lg:grid-cols-2">
             {/* Left: direct channels + map */}
             <Reveal className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 min-[420px]:grid-cols-2">
                 <a
                   href={SITE.phoneHref}
                   className="group rounded-3xl border border-navy/10 bg-white p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
@@ -144,7 +144,7 @@ export default function Contact() {
                     <label htmlFor="dates" className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-navy/60">
                       Travel dates (approx.)
                     </label>
-                    <input id="dates" value={form.dates} onChange={update('dates')} className={inputCls} placeholder="Mid-December, flexible" />
+                    <input id="dates" type="text" inputMode="numeric" autoComplete="off" value={form.dates} onChange={update('dates')} className={inputCls} placeholder="Mid-December, flexible" />
                   </div>
                 </div>
 

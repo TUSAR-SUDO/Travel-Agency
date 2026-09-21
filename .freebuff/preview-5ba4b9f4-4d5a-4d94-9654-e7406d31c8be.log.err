@@ -1,0 +1,268 @@
+[2m10:00:12 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\mahak\OneDrive\Desktop\Travel Agency\src\pages\PackageDetail.jsx: Unexpected token, expected "..." (44:11)
+
+[0m [90m 42 |[31m [32m          }`[31m
+ [90m 43 |[31m         }
+[31m[1m>[22m[31m[90m 44 |[31m           {facts[33m.[31mmap(([k[33m,[31m v]) [33m=>[31m (
+ [90m    |[31m            [31m[1m^[22m[31m
+ [90m 45 |[31m             [33m<[31m[33mdiv[31m key[33m=[31m{k} className[33m=[31m[32m"px-1 first:pl-0"[31m[33m>[31m
+ [90m 46 |[31m               [33m<[31m[33mspan[31m
+ [90m 47 |[31m                 className[33m=[31m{[32m`block font-bold uppercase tracking-wider transition-colors ${[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/mahak/OneDrive/Desktop/Travel Agency/src/pages/PackageDetail.jsx[39m:44:11
+[33m  42 |            }`
+  43 |          }
+  44 |            {facts.map(([k, v]) => (
+     |             ^
+  45 |              <div key={k} className="px-1 first:pl-0">
+  46 |                <span[39m
+      at constructor (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6622:19)
+      at JSXParserMixin.unexpected (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6642:16)
+      at JSXParserMixin.expect (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6922:12)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4663:12)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4685:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4680:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4704:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4716:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4716:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4767:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4777:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11107:23)
+      at JSXParserMixin.parseUpdate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11092:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11072:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10925:61)
+      at JSXParserMixin.parseExprOps (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10930:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10907:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10857:21)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10826:39
+      at JSXParserMixin.allowInAnd (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12460:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10826:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12527:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11706:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11362:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4782:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11107:23)
+      at JSXParserMixin.parseUpdate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11092:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11072:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10925:61)
+      at JSXParserMixin.parseExprOps (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10930:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10907:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10857:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10810:23)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10806:39
+      at JSXParserMixin.allowInAnd (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12455:16)
+      at JSXParserMixin.parseExpression (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10806:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13176:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12832:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12801:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12781:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13350:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13343:10)
+      at JSXParserMixin.parseBlock (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13331:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12134:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12120:10)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13479:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12437:14)
+      at JSXParserMixin.parseFunction (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13478:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13159:17)
+[2m10:00:48 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\mahak\OneDrive\Desktop\Travel Agency\src\pages\PackageDetail.jsx: Unexpected token, expected "..." (44:11)
+
+[0m [90m 42 |[31m [32m          }`[31m
+ [90m 43 |[31m         }
+[31m[1m>[22m[31m[90m 44 |[31m           {facts[33m.[31mmap(([k[33m,[31m v]) [33m=>[31m (
+ [90m    |[31m            [31m[1m^[22m[31m
+ [90m 45 |[31m             [33m<[31m[33mdiv[31m key[33m=[31m{k} className[33m=[31m[32m"px-1 first:pl-0"[31m[33m>[31m
+ [90m 46 |[31m               [33m<[31m[33mspan[31m
+ [90m 47 |[31m                 className[33m=[31m{[32m`block font-bold uppercase tracking-wider transition-colors ${[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/mahak/OneDrive/Desktop/Travel Agency/src/pages/PackageDetail.jsx[39m:44:11
+[33m  42 |            }`
+  43 |          }
+  44 |            {facts.map(([k, v]) => (
+     |             ^
+  45 |              <div key={k} className="px-1 first:pl-0">
+  46 |                <span[39m
+      at constructor (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6622:19)
+      at JSXParserMixin.unexpected (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6642:16)
+      at JSXParserMixin.expect (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6922:12)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4663:12)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4685:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4680:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4704:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4716:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4716:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4767:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4777:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11107:23)
+      at JSXParserMixin.parseUpdate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11092:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11072:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10925:61)
+      at JSXParserMixin.parseExprOps (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10930:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10907:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10857:21)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10826:39
+      at JSXParserMixin.allowInAnd (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12460:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10826:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12527:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11706:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11362:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4782:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11107:23)
+      at JSXParserMixin.parseUpdate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11092:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11072:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10925:61)
+      at JSXParserMixin.parseExprOps (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10930:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10907:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10857:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10810:23)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10806:39
+      at JSXParserMixin.allowInAnd (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12455:16)
+      at JSXParserMixin.parseExpression (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10806:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13176:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12832:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12801:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12781:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13350:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13343:10)
+      at JSXParserMixin.parseBlock (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13331:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12134:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12120:10)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13479:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12437:14)
+      at JSXParserMixin.parseFunction (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13478:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13159:17)
+[2m10:02:17 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\mahak\OneDrive\Desktop\Travel Agency\src\pages\PackageDetail.jsx: Unexpected token, expected "..." (44:11)
+
+[0m [90m 42 |[31m [32m          }`[31m
+ [90m 43 |[31m         }
+[31m[1m>[22m[31m[90m 44 |[31m           {facts[33m.[31mmap(([k[33m,[31m v]) [33m=>[31m (
+ [90m    |[31m            [31m[1m^[22m[31m
+ [90m 45 |[31m             [33m<[31m[33mdiv[31m key[33m=[31m{k} className[33m=[31m[32m"px-1 first:pl-0"[31m[33m>[31m
+ [90m 46 |[31m               [33m<[31m[33mspan[31m
+ [90m 47 |[31m                 className[33m=[31m{[32m`block font-bold uppercase tracking-wider transition-colors ${[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/mahak/OneDrive/Desktop/Travel Agency/src/pages/PackageDetail.jsx[39m:44:11
+[33m  42 |            }`
+  43 |          }
+  44 |            {facts.map(([k, v]) => (
+     |             ^
+  45 |              <div key={k} className="px-1 first:pl-0">
+  46 |                <span[39m
+      at constructor (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6622:19)
+      at JSXParserMixin.unexpected (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6642:16)
+      at JSXParserMixin.expect (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6922:12)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4663:12)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4685:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4680:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4704:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4716:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4716:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4767:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4777:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11107:23)
+      at JSXParserMixin.parseUpdate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11092:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11072:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10925:61)
+      at JSXParserMixin.parseExprOps (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10930:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10907:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10857:21)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10826:39
+      at JSXParserMixin.allowInAnd (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12460:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10826:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12527:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11706:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11362:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4782:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11107:23)
+      at JSXParserMixin.parseUpdate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11092:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11072:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10925:61)
+      at JSXParserMixin.parseExprOps (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10930:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10907:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10857:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10810:23)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10806:39
+      at JSXParserMixin.allowInAnd (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12455:16)
+      at JSXParserMixin.parseExpression (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10806:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13176:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12832:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12801:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12781:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13350:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13343:10)
+      at JSXParserMixin.parseBlock (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13331:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12134:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12120:10)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13479:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12437:14)
+      at JSXParserMixin.parseFunction (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13478:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13159:17)
+[2m10:02:28 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\mahak\OneDrive\Desktop\Travel Agency\src\pages\PackageDetail.jsx: Unexpected token, expected "..." (43:11)
+
+[0m [90m 41 |[31m [32m          }`[31m
+ [90m 42 |[31m         }
+[31m[1m>[22m[31m[90m 43 |[31m           {facts[33m.[31mmap(([k[33m,[31m v]) [33m=>[31m (
+ [90m    |[31m            [31m[1m^[22m[31m
+ [90m 44 |[31m             [33m<[31m[33mdiv[31m key[33m=[31m{k} className[33m=[31m[32m"px-1 first:pl-0"[31m[33m>[31m
+ [90m 45 |[31m               [33m<[31m[33mspan[31m
+ [90m 46 |[31m                 className[33m=[31m{[32m`block font-bold uppercase tracking-wider transition-colors ${[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/mahak/OneDrive/Desktop/Travel Agency/src/pages/PackageDetail.jsx[39m:43:11
+[33m  41 |            }`
+  42 |          }
+  43 |            {facts.map(([k, v]) => (
+     |             ^
+  44 |              <div key={k} className="px-1 first:pl-0">
+  45 |                <span[39m
+      at constructor (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6622:19)
+      at JSXParserMixin.unexpected (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6642:16)
+      at JSXParserMixin.expect (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:6922:12)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4663:12)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4685:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4680:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4704:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4716:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4716:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4767:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4777:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11107:23)
+      at JSXParserMixin.parseUpdate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11092:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11072:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10925:61)
+      at JSXParserMixin.parseExprOps (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10930:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10907:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10857:21)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10826:39
+      at JSXParserMixin.allowInAnd (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12460:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10826:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12527:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11706:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11362:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:4782:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11107:23)
+      at JSXParserMixin.parseUpdate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11092:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:11072:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10925:61)
+      at JSXParserMixin.parseExprOps (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10930:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10907:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10857:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10810:23)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10806:39
+      at JSXParserMixin.allowInAnd (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12455:16)
+      at JSXParserMixin.parseExpression (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:10806:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13176:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12832:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12801:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12781:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13350:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13343:10)
+      at JSXParserMixin.parseBlock (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13331:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12134:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12120:10)
+      at C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13479:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:12437:14)
+      at JSXParserMixin.parseFunction (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13478:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\mahak\OneDrive\Desktop\Travel Agency\node_modules\@babel\parser\lib\index.js:13159:17)

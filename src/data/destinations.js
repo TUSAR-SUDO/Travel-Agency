@@ -18,7 +18,7 @@ export const DESTINATIONS = [
   {
     name: 'Kashmir',
     region: 'Domestic',
-    image: px(15669097),
+    image: px(11126342),
     link: '/packages?region=Domestic',
   },
   {

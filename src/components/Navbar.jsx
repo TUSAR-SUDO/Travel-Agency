@@ -29,7 +29,7 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <nav className="container-x flex h-16 items-center justify-between sm:h-20">
+      <nav className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-5 sm:h-20 sm:px-8">
         <Link to="/" className="flex items-center gap-2.5" aria-label="Home">
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold font-display text-lg font-black text-navy shadow-md shadow-gold/30">
             W

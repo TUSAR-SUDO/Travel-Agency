@@ -28,21 +28,20 @@ function QuickFactsBar({ pkg }) {
   ]
 
   return (
-    <div
-      className={`sticky top-16 z-30 border-y border-navy/10 transition-all duration-500 sm:top-20 ${
+    <div        className={`sticky top-16 z-30 border-y border-navy/10 transition-all duration-500 sm:top-20 ${
         condensed
           ? 'bg-navy/95 py-3 shadow-lg shadow-navy/20 backdrop-blur-md'
           : 'bg-cream py-5'
       }`}
     >
-      <div className="container-x flex flex-wrap items-center justify-between gap-3">
+      <div className="container-x flex items-center justify-between gap-3">
         <div
-          className={`flex flex-wrap gap-x-8 gap-y-2 transition-all duration-500 ${
-            condensed ? 'text-xs' : 'text-sm'
+          className={`flex items-center divide-x divide-navy/10 transition-all duration-500 ${
+            condensed ? 'gap-4 text-xs' : 'gap-5 text-sm'
           }`}
         >
           {facts.map(([k, v]) => (
-            <div key={k}>
+            <div key={k} className="px-1 first:pl-0">
               <span
                 className={`block font-bold uppercase tracking-wider transition-colors ${
                   condensed ? 'text-gold' : 'text-navy/45'
@@ -51,9 +50,9 @@ function QuickFactsBar({ pkg }) {
                 {k}
               </span>
               <span
-                className={
+                className={`block max-w-[24vw] truncate sm:max-w-none ${
                   condensed ? 'font-semibold text-white' : 'font-semibold text-navy'
-                }
+                }`}
               >
                 {v}
               </span>
@@ -111,7 +110,7 @@ export default function PackageDetail() {
       className="flex-1"
     >
       {/* ---------- Hero ---------- */}
-      <section className="relative h-[70vh] min-h-[480px] overflow-hidden bg-navy">
+      <section className="relative h-[72svh] min-h-[480px] overflow-hidden bg-navy">
         {pkg.heroVideo ? (
           <SmartVideo
             src={pkg.heroVideo}
@@ -163,13 +162,25 @@ export default function PackageDetail() {
       {/* ---------- Sticky quick facts ---------- */}
       <QuickFactsBar pkg={pkg} />
 
-      {/* ---------- Top WhatsApp CTA ---------- */}
-      <div className="container-x pt-10">
-        <WhatsAppCTA
-          message={pkg.whatsappMessage}
-          title={`Questions about ${pkg.title}?`}
-          sub="Get the day-wise plan, hotel names and exact pricing in one WhatsApp message."
-        />
+      {/* ---------- Top WhatsApp CTA — full-width button over hero on phones, card on desktop ---------- */}
+      <div className="container-x relative z-20 -mt-16 sm:pt-10">
+        <div className="sm:hidden">
+          <a
+            href={buildWhatsAppLink(pkg.whatsappMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-whatsapp w-full"
+          >
+            Book This Trip on WhatsApp
+          </a>
+        </div>
+        <div className="hidden sm:block">
+          <WhatsAppCTA
+            message={pkg.whatsappMessage}
+            title={`Questions about ${pkg.title}?`}
+            sub="Get the day-wise plan, hotel names and exact pricing in one WhatsApp message."
+          />
+        </div>
       </div>
 
       {/* ---------- Highlights + itinerary ---------- */}

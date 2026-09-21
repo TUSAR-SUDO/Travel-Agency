@@ -80,13 +80,13 @@ function Slide({ slide, active }) {
  */
 function NextRow({ active, onSelect, reduced }) {
   return (
-    <div className="absolute inset-x-0 bottom-16 z-20 sm:bottom-20">
+    <div className="">
       <div className="container-x flex justify-end">
         <div className="max-w-full">
           <p className="mb-2.5 hidden text-right text-[10px] font-extrabold uppercase tracking-[0.3em] text-white/55 sm:block">
             {String(active + 1).padStart(2, '0')} / {String(SLIDES.length).padStart(2, '0')}
           </p>
-          <div className="no-scrollbar flex gap-2.5 overflow-x-auto pb-1 sm:gap-3">
+          <div className="no-scrollbar flex gap-2.5 overflow-x-auto pb-1 max-sm:-mr-5 max-sm:pr-5 sm:gap-3">
             {SLIDES.map((s, i) => {
               const isActive = i === active
               return (
@@ -98,7 +98,7 @@ function NextRow({ active, onSelect, reduced }) {
                   aria-current={isActive}
                   whileHover={reduced ? undefined : { y: -5 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 24 }}
-                  className={`relative h-[74px] w-[112px] shrink-0 overflow-hidden rounded-xl text-left shadow-xl shadow-navy/50 backdrop-blur-sm transition-[opacity,box-shadow] duration-500 sm:h-[86px] sm:w-[136px] ${
+                  className={`relative h-[64px] w-[104px] shrink-0 overflow-hidden rounded-xl text-left shadow-xl shadow-navy/50 backdrop-blur-sm transition-[opacity,box-shadow] duration-500 sm:h-[86px] sm:w-[136px] ${
                     isActive
                       ? 'opacity-100 ring-2 ring-gold'
                       : 'opacity-55 ring-1 ring-white/20 hover:opacity-90 hover:ring-white/40'
@@ -170,7 +170,7 @@ export default function SlideshowHero() {
   const current = SLIDES[active]
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-navy">
+    <section className="relative h-[100svh] min-h-[560px] overflow-hidden bg-navy">
       <h1 className="sr-only">
         Wanderlust Travels — handcrafted tour packages across India and beyond
       </h1>
@@ -186,7 +186,7 @@ export default function SlideshowHero() {
       <span className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-navy/70 via-navy/25 to-transparent" />
 
       {/* content */}
-      <div className="container-x relative z-10 flex min-h-screen flex-col justify-center pb-44 pt-24 sm:pb-48">
+      <div className="container-x relative z-10 flex h-full flex-col justify-center pb-52 pt-20 sm:pb-56">
         <div className="max-w-3xl">
           {/* eyebrow */}
           <motion.p
@@ -214,7 +214,7 @@ export default function SlideshowHero() {
                   filter: i === active ? 'blur(0px)' : 'blur(8px)',
                 }}
                 transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-                className={`font-display text-[17vw] font-black leading-[0.9] tracking-tight text-white drop-shadow-[0_6px_30px_rgba(0,0,0,0.55)] sm:text-8xl lg:text-[9rem] ${
+                className={`font-display font-black leading-[0.9] tracking-tight text-white drop-shadow-[0_6px_30px_rgba(0,0,0,0.55)] text-[19vw] sm:text-7xl md:text-8xl lg:text-[9rem] ${
                   i === active ? '' : 'pointer-events-none absolute inset-0'
                 }`}
               >
@@ -266,8 +266,10 @@ export default function SlideshowHero() {
         </div>
       </div>
 
-      {/* bottom horizontal destination navigator */}
-      <NextRow active={active} onSelect={setActive} reduced={reduced} />
+      {/* bottom horizontal destination navigator (padded clear of notch/home bar) */}
+      <div className="absolute inset-x-0 bottom-0 z-20 pb-safe">
+        <NextRow active={active} onSelect={setActive} reduced={reduced} />
+      </div>
     </section>
   )
 }

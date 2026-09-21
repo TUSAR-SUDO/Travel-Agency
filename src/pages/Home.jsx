@@ -67,11 +67,11 @@ export default function Home() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-2 gap-8 lg:grid-cols-4"
+            className="grid grid-cols-2 gap-x-4 gap-y-10 min-[420px]:gap-8 lg:grid-cols-4"
           >
             {SITE.stats.map((s) => (
               <motion.div key={s.label} variants={staggerChild} className="text-center">
-                <p className="font-display text-4xl font-black text-gold sm:text-5xl">
+                <p className="font-display text-3xl font-black text-gold min-[420px]:text-4xl sm:text-5xl">
                   {s.value}
                 </p>
                 <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-white/70">
@@ -104,7 +104,7 @@ export default function Home() {
                 className="flex h-full flex-col rounded-3xl border border-navy/5 bg-white p-7 shadow-sm transition-shadow hover:shadow-xl hover:shadow-navy/10"
               >
                 <div className="text-lg text-gold" aria-label="5 star rating">★★★★★</div>
-                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-navy/75">
+                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-navy/75 [overflow-wrap:anywhere]">
                   “{t.quote}”
                 </blockquote>
                 <figcaption className="mt-6 flex items-center gap-3 border-t border-navy/5 pt-5">

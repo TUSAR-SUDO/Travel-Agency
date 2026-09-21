@@ -5,9 +5,31 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* lock viewport height on mobile browsers with collapsing URL bars */
+    height: -webkit-fill-available;
+    overflow-x: clip; /* clip, unlike hidden, keeps position:sticky working */
   }
   body {
     @apply bg-cream font-body text-navy antialiased;
+    overscroll-behavior-y: none; /* no rubber-band page bounce */
+    text-size-adjust: 100%; /* never auto-inflate text in landscape */
+    -webkit-tap-highlight-color: transparent;
+    /* pre-reveal spring transforms (whileInView x/y offsets) must never
+       create a horizontal scrollbar; clip, unlike hidden, keeps sticky working */
+    overflow-x: clip;
+  }
+  /* iOS: focusing an input must not zoom the page (needs >= 16px) */
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+  @media (min-width: 640px) {
+    input,
+    select,
+    textarea {
+      font-size: inherit;
+    }
   }
   ::selection {
     @apply bg-gold/80 text-navy;
@@ -49,5 +71,9 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+  /* iOS home-indicator safe area for fixed CTAs */
+  .pb-safe {
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
   }
 }

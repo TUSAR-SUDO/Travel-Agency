@@ -29,8 +29,8 @@ export default function About() {
                 </div>
                 <div className="mt-8 h-64 overflow-hidden rounded-3xl shadow-lg">
                   <SmartImage
-                    src="https://images.pexels.com/photos/15669097/pexels-photo-15669097.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="Prayer flags over Himalayan peaks"
+                    src="https://images.pexels.com/photos/11126342/pexels-photo-11126342.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Snow-covered pine forests and cabins in Kashmir"
                     className="h-full w-full"
                   />
                 </div>

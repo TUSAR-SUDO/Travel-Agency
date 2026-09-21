@@ -15,6 +15,7 @@ export default function PackageCard({ pkg }) {
   return (
     <motion.article
       whileHover={{ y: -8 }}
+      whileTap={{ scale: 0.985 }}
       transition={{ type: 'spring', stiffness: 300, damping: 22 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
