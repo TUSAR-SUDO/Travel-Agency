@@ -49,18 +49,105 @@
   }
 }
 
+/* ------------------------------------------------------------
+   SCROLLBARS — invisible chrome. The site must never show a
+   raw grey bar; webkit gets a slim gold-navy thumb that only
+   appears on hover/scroll, Firefox gets thin + auto-hiding.
+------------------------------------------------------------ */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: rgba(201, 162, 39, 0.45) transparent;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+*:hover::-webkit-scrollbar-thumb {
+  background: rgba(201, 162, 39, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 162, 39, 0.65);
+}
+
 @layer components {
   .container-x {
     @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
   }
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-bold uppercase tracking-wider text-navy shadow-lg shadow-gold/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-xl hover:shadow-gold/30 active:translate-y-0;
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gold px-7 py-3.5 text-sm font-bold uppercase tracking-wider text-navy shadow-lg shadow-gold/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-xl hover:shadow-gold/30 active:translate-y-0;
   }
   .btn-whatsapp {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-3.5 text-sm font-bold uppercase tracking-wider text-white shadow-lg shadow-whatsapp/25 transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 active:translate-y-0;
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-whatsapp px-7 py-3.5 text-sm font-bold uppercase tracking-wider text-white shadow-lg shadow-whatsapp/25 transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 active:translate-y-0;
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-bold uppercase tracking-wider text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/20 active:translate-y-0;
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-bold uppercase tracking-wider text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/20 active:translate-y-0;
+  }
+  /* light sheen that sweeps across CTAs on hover — the “crafted” touch */
+  .btn-gold::after,
+  .btn-whatsapp::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 42%,
+      rgba(255, 255, 255, 0.38) 50%,
+      transparent 58%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+  }
+  .btn-ghost::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 42%,
+      rgba(255, 255, 255, 0.16) 50%,
+      transparent 58%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+  }
+  .btn-gold:hover::after,
+  .btn-whatsapp:hover::after,
+  .btn-ghost:hover::after {
+    transform: translateX(130%);
+  }
+  /* gold underline that grows from the centre under nav links */
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: -7px;
+    height: 2px;
+    border-radius: 2px;
+    background: #e3c05c;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .nav-link:hover::after,
+  .nav-link.nav-active::after {
+    transform: scaleX(1);
   }
   .eyebrow {
     @apply text-xs font-extrabold uppercase tracking-[0.25em] text-gold-dark;

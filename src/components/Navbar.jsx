@@ -50,8 +50,10 @@ export default function Navbar() {
               <NavLink
                 to={l.to}
                 className={({ isActive }) =>
-                  `text-sm font-semibold tracking-wide transition-colors duration-300 ${
-                    isActive ? 'text-gold' : 'text-white/85 hover:text-gold'
+                  `nav-link text-sm font-semibold tracking-wide transition-colors duration-300 ${
+                    isActive
+                      ? 'nav-active text-gold'
+                      : 'text-white/85 hover:text-gold'
                   }`
                 }
               >
@@ -62,7 +64,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/contact"
-              className="rounded-full bg-gold px-5 py-2.5 text-xs font-extrabold uppercase tracking-widest text-navy shadow-md shadow-gold/30 transition hover:bg-gold-light"
+              className="rounded-full bg-gold px-5 py-2.5 text-xs font-extrabold uppercase tracking-widest text-navy shadow-md shadow-gold/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/40"
             >
               Plan My Trip
             </Link>
@@ -100,8 +102,13 @@ export default function Navbar() {
             className="overflow-hidden bg-navy/95 backdrop-blur-md md:hidden"
           >
             <ul className="container-x flex flex-col gap-1 py-4">
-              {LINKS.map((l) => (
-                <li key={l.to}>
+              {LINKS.map((l, i) => (
+                <motion.li
+                  key={l.to}
+                  initial={{ opacity: 0, x: -18 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.06 * i, duration: 0.35, ease: 'easeOut' }}
+                >
                   <NavLink
                     to={l.to}
                     onClick={() => setOpen(false)}
@@ -115,7 +122,7 @@ export default function Navbar() {
                   >
                     {l.label}
                   </NavLink>
-                </li>
+                </motion.li>
               ))}
             </ul>
           </motion.div>

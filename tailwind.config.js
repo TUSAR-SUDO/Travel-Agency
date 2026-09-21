@@ -39,11 +39,21 @@ export default {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
         },
+        curtain: {
+          '0%': { transform: 'scaleY(1)' },
+          '100%': { transform: 'scaleY(0)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-9px)' },
+        },
       },
       animation: {
         kenburns: 'kenburns 24s ease-in-out infinite alternate',
         marquee: 'marquee 45s linear infinite',
         shimmer: 'shimmer 2.2s linear infinite',
+        curtain: 'curtain 0.7s cubic-bezier(0.76, 0, 0.24, 1) forwards',
+        float: 'float 5s ease-in-out infinite',
       },
     },
   },

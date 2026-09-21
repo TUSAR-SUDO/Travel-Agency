@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion'
+import { useEffect, useRef } from 'react'
+import { animate, motion, useInView, useMotionValue, useTransform } from 'framer-motion'
 import SlideshowHero from '../components/SlideshowHero.jsx'
 import TrustStrip from '../components/TrustStrip.jsx'
 import JourneyTimeline from '../components/JourneyTimeline.jsx'
@@ -8,6 +9,30 @@ import PackageCard from '../components/PackageCard.jsx'
 import { PACKAGES } from '../data/packages.js'
 import { TESTIMONIALS } from '../data/testimonials.js'
 import { SITE } from '../data/site.js'
+
+/** Animated number: counts up when scrolled into view. */
+function CountUp({ value }) {
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true, margin: '-40px' })
+  const numeric = parseFloat(value.replace(/[^\d.]/g, '')) || 0
+  const suffix = value.replace(/^[\d.,]+/, '')
+  const display = useMotionValue(0)
+  const rounded = useTransform(display, (v) =>
+    Number.isInteger(numeric)
+      ? `${Math.round(v).toLocaleString()}${suffix}`
+      : `${v.toFixed(1)}${suffix}`,
+  )
+  useEffect(() => {
+    if (!inView) return
+    const controls = animate(display, numeric, { duration: 1.6, ease: [0.22, 1, 0.36, 1] })
+    return controls.stop
+  }, [inView, numeric, display])
+  return (
+    <p ref={ref} className="font-display text-3xl font-black text-gold min-[420px]:text-4xl sm:text-5xl">
+      <motion.span>{rounded}</motion.span>
+    </p>
+  )
+}
 
 export default function Home() {
   const featured = PACKAGES.slice(0, 3)
@@ -59,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- Stats band ---------- */}
+      {/* ---------- Stats band (count-up on scroll) ---------- */}
       <section className="bg-navy py-16">
         <div className="container-x">
           <motion.div
@@ -71,9 +96,7 @@ export default function Home() {
           >
             {SITE.stats.map((s) => (
               <motion.div key={s.label} variants={staggerChild} className="text-center">
-                <p className="font-display text-3xl font-black text-gold min-[420px]:text-4xl sm:text-5xl">
-                  {s.value}
-                </p>
+                <CountUp value={s.value} />
                 <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-white/70">
                   {s.label}
                 </p>

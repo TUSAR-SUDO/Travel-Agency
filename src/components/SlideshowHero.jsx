@@ -86,7 +86,7 @@ function NextRow({ active, onSelect, reduced }) {
           <p className="mb-2.5 hidden text-right text-[10px] font-extrabold uppercase tracking-[0.3em] text-white/55 sm:block">
             {String(active + 1).padStart(2, '0')} / {String(SLIDES.length).padStart(2, '0')}
           </p>
-          <div className="no-scrollbar flex gap-2.5 overflow-x-auto pb-1 max-sm:-mr-5 max-sm:pr-5 sm:gap-3">
+          <div className="no-scrollbar flex snap-x snap-mandatory gap-2.5 overflow-x-auto pb-1 max-sm:-mr-5 max-sm:pr-5 sm:gap-3">
             {SLIDES.map((s, i) => {
               const isActive = i === active
               return (
@@ -98,7 +98,7 @@ function NextRow({ active, onSelect, reduced }) {
                   aria-current={isActive}
                   whileHover={reduced ? undefined : { y: -5 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 24 }}
-                  className={`relative h-[64px] w-[104px] shrink-0 overflow-hidden rounded-xl text-left shadow-xl shadow-navy/50 backdrop-blur-sm transition-[opacity,box-shadow] duration-500 sm:h-[86px] sm:w-[136px] ${
+                  className={`relative h-[64px] w-[104px] shrink-0 snap-start overflow-hidden rounded-xl text-left shadow-xl shadow-navy/50 backdrop-blur-sm transition-[opacity,box-shadow] duration-500 sm:h-[86px] sm:w-[136px] ${
                     isActive
                       ? 'opacity-100 ring-2 ring-gold'
                       : 'opacity-55 ring-1 ring-white/20 hover:opacity-90 hover:ring-white/40'
